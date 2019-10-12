@@ -1,7 +1,7 @@
 <?php
 $sitename = "Leones por la sangre";
 $pagename = "Banco de Sangre";
-$siteurl = "https://bnetservice.com.mx/bancodesangre";
+$siteurl = "https://bnetservice.com.mx/bs";
 
 ?>
 <!DOCTYPE html>
@@ -64,7 +64,7 @@ $siteurl = "https://bnetservice.com.mx/bancodesangre";
                                 <li class="current-menu-item"><a href="inicio.html">Inicio</a></li>
                                 <li><a href="acerca.html">Adrian</a></li>
 								<li><a href="">Ivan</a></li>
-								<li><a href="parisfb.html">Paris</a></li>
+								<li><a href="paris.php">Paris</a></li>
                             </ul>
                         </nav><!-- .site-navigation -->
 
