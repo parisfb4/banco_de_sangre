@@ -1,7 +1,7 @@
 <?php
 $sitename = "Leones por la sangre";
 $pagename = "Banco de Sangre";
-$siteurl = "https://bnetservice.com.mx/bancodesangre";
+$siteurl = "https://bnetservice.com.mx/bs";
 
 ?>
 <!DOCTYPE html>
