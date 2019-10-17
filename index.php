@@ -1,5 +1,5 @@
 <?php
-$sitename = "Leones por la sangre";
+$sitename = "Leones por la Sangre";
 $pagename = "Banco de Sangre";
 $siteurl = "https://bnetservice.com.mx/bs";
 
