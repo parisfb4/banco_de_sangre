@@ -98,60 +98,30 @@ $centerLocationMap = '<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m
 
             <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Información del Centro</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
+                  <thead class="table-danger">
                     <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                      <th>Centro Universitario</th>
+                      <th>Donantes</th>
+                      <th>Personal necesario</th>
                     </tr>
                   </thead>
-                  <tfoot>
-                    <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
-                    </tr>
-                  </tfoot>
                   <tbody>
                     
-                   
                     <tr>
-                      <td>Colleen Hurst</td>
-                      <td>Javascript Developer</td>
-                      <td>San Francisco</td>
-                      <td>39</td>
-                      <td>2009/09/15</td>
-                      <td>$205,500</td>
+                      <td>CUCBA</td>
+                      <td>100</td>
+                      <td>125</td>
                     </tr>
-                    <tr>
-                      <td>Sonya Frost</td>
-                      <td>Software Engineer</td>
-                      <td>Edinburgh</td>
-                      <td>23</td>
-                      <td>2008/12/13</td>
-                      <td>$103,600</td>
-                    </tr>
-                    
                   </tbody>
                 </table>
               </div>
             </div>
-
           
-        
-        
-        
         </div>
         <!-- /.container-fluid -->
         <div class="row">
@@ -185,55 +155,34 @@ $centerLocationMap = '<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m
 
             <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Información de la Brigada</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
+                  <thead class="table-primary">
                     <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                      <th>Encargado de la Brigada</th>
+                      <th>Telefono</th>
+                      <th>Hospital</th>
+                      <th>Numero de cedula</th>
                     </tr>
                   </thead>
-                  <tfoot>
-                    <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
-                    </tr>
-                  </tfoot>
                   <tbody>
                     
                    
                     <tr>
-                      <td>Colleen Hurst</td>
-                      <td>Javascript Developer</td>
-                      <td>San Francisco</td>
-                      <td>39</td>
-                      <td>2009/09/15</td>
-                      <td>$205,500</td>
-                    </tr>
-                    <tr>
-                      <td>Sonya Frost</td>
-                      <td>Software Engineer</td>
-                      <td>Edinburgh</td>
-                      <td>23</td>
-                      <td>2008/12/13</td>
-                      <td>$103,600</td>
+                      <td>Natzieli</td>
+                      <td>33122371271</td>
+                      <td>Hospital Civil</td>
+                      <td>213989344</td>
                     </tr>
                     
                   </tbody>
                 </table>
               </div>
             </div>
+            
       </div>
       <!-- End of Main Content -->
 
@@ -241,7 +190,7 @@ $centerLocationMap = '<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
+            <span>Copyright &copy; Paris Flores Belmares 2019 - Banco de sangre. Leones Unidos por la Salud - ALPHA TEAM</span>
           </div>
         </div>
       </footer>
