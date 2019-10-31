@@ -1,469 +1,241 @@
 <?php
-$sitename = "Leones por la Sangre";
-$pagename = "Banco de Sangre";
-$siteurl = "https://bnetservice.com.mx/bs";
+
+//$latitude = $_POST('latitude');
+
+$centerLocationMap = '<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d119436.06446343641!2d-103.48990608167219!3d20.694909588476502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d20.656128!2d-103.32405759999999!4m5!1s0x8428a7d88f9d10af%3A0xcaba424f1b40d0b1!2sCUCBA!3m2!1d20.745920899999998!2d-103.5128512!5e0!3m2!1ses!2smx!4v1571331996246!5m2!1ses!2smx" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>';
 
 ?>
+
+
 <!DOCTYPE html>
-<html lang="ES">
+<html lang="en">
+
 <head>
-    <title><?php echo $sitename; ?></title>
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="<?php echo $sitename; ?>">
-	<meta name="keywords" content="<?php echo $sitename; ?>, Colecta Nacional, donaciones, Mexico">
-	<meta name="author" content="<?php echo $sitename; ?>">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?php echo $siteurl; ?>/css/bootstrap.min.css">
-    <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="<?php echo $siteurl; ?>/css/font-awesome.min.css">
-    <!-- ElegantFonts CSS -->
-    <link rel="stylesheet" href="<?php echo $siteurl; ?>/css/elegant-fonts.css">
-    <!-- themify-icons CSS -->
-    <link rel="stylesheet" href="<?php echo $siteurl; ?>/css/themify-icons.css">
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="<?php echo $siteurl; ?>/css/swiper.min.css">
-    <!-- Styles -->
-    <link rel="stylesheet" href="<?php echo $siteurl; ?>/style.css">
-	<link rel="shortcut icon" href="<?php echo $siteurl; ?>/favicon.png">
-    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Brigadas</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.css" rel="stylesheet">
+
 </head>
-<body>
-    <header class="site-header">
-        <div class="top-header-bar">
-            <div class="container">
-                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
-                    <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
-                        <div class="header-bar-email">
-                            CONTACTO:  <a href="<?php echo $siteurl; ?>/contacto/" target="_top">Click aqu&iacute;</a>
-                        </div>
-						
-                    </div><!-- .col -->
 
-                    <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
-                        <div class="donate-btn">
-                            <a href="http://www.paypal.me/barcewin" target="_blank">DONA AHORA</a>
-                        </div><!-- .donate-btn -->
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .top-header-bar -->
+<body id="page-top">
 
-        <div class="nav-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
-                        <div class="site-branding d-flex align-items-center">
-                           <a class="d-block" href="inicio.html" rel="home"><img class="d-block" src="images\logo.png" alt="logo"></a>
-                        </div><!-- .site-branding -->
+  <!-- Page Wrapper -->
+  <div id="wrapper">
 
-                        <nav class="site-navigation d-flex justify-content-end align-items-center">
-                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
-                                <li class="current-menu-item"><a href="inicio.html">Inicio</a></li>
-                                <li><a href="acerca.html">Adrian</a></li>
-								<li><a href="">Ivan</a></li>
-								<li><a href="paris.php">Paris</a></li>
-                            </ul>
-                        </nav><!-- .site-navigation -->
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-                        <div class="hamburger-menu d-lg-none">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div><!-- .hamburger-menu -->
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .nav-bar -->
-    </header><!-- .site-header -->
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
+          <!--<i class="fas fa-laugh-wink"></i>-->
+          <img src="images/logolargo.png" class="logo img-fluid mx-auto d-block " alt="Logo Banco Sangre">
+        <div class="sidebar-brand-text mx-3">Banco de Sangre</div>
+      </a>
 
-    <div class="swiper-container hero-slider">
-        <div class="swiper-wrapper" .="">
-            <div class="swiper-slide hero-content-wrap">
-                <img src="images\SLIDE1.jpg" alt="">
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
 
-                <div class="hero-content-overlay position-absolute w-100 h-100">
-                    <div class="container h-100">
-                        <div class="row h-100">
-                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
-                                <header class="entry-header">
-                                    <h1>Trabajamos por M&eacute;xico</h1>
-                                    <h4>Salvando vidas</h4>
-                                </header><!-- .entry-header -->
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
 
-                                <div class="entry-content mt-4">
-                                    <p>Con&eacute;ctate con <?php echo $sitename; ?> y <br>sigue salvando vidas</p>
-                                </div><!-- .entry-content -->
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
 
-                                <footer class="entry-footer d-flex flex-wrap align-items-center mt-5">
-                                    <a href="http://www.paypal.me/barcewin" target="_blank" class="btn gradient-bg mr-2">DONA AQU&Iacute;</a>
-                                    <a href="#" class="btn orange-border">Usuarios registrados</a>
-                                </footer>
-                            </div>
-                        </div>
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Navbar -->
+          
+          <img src="images/logolargo.png"  class="logo img-fluid mx-auto d-block " alt="Logo Banco Sangre">
+
+         
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4 text-center">
+            <!--<h1 class="h3 mb-0 text-gray-800">CENTRO UNIVERSITARIO CON MAYOR NECESIDAD DE BRIGADA</h1>-->
+            <h1 class="text-gray-800 mb-0">CENTRO UNIVERSITARIO CON MAYOR NECESIDAD DE BRIGADA</h1>
+          </div>
+
+
+
+          <div class="row">
+
+            <div class="col-lg-12">
+
+            <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Información del Centro</h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead class="table-danger">
+                    <tr>
+                      <th>Centro Universitario</th>
+                      <th>Donantes</th>
+                      <th>Personal necesario</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                    <tr>
+                      <td>CUCBA</td>
+                      <td>100</td>
+                      <td>125</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          
+        </div>
+        <!-- /.container-fluid -->
+        <div class="row">
+            
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-12 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <!-- <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Earnings (Monthly)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
                     </div>
+                    <div class="col-auto">
+                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div> -->
+                    <?php
+                    echo $centerLocationMap
+                    ?>
+                  </div>
                 </div>
+              </div>
             </div>
 
-            <div class="swiper-slide hero-content-wrap">
-                <img src="images\SLIDE3.jpg" alt="">
+          </div>
+      </div>
+      <div class="row">
 
-                <div class="hero-content-overlay position-absolute w-100 h-100">
-                    <div class="container h-100">
-                        <div class="row h-100">
-                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
-                                <header class="entry-header">
-                                    <h1>¡&Uacute;nete!</h1>
-                                    <h4>Voluntariado</h4>
-                                </header><!-- .entry-header -->
+            <div class="col-lg-12">
 
-                                <div class="entry-content mt-4">
-                                    <p>Ac&eacute;rcate a tu delegaci&oacute;n <?php echo $sitename; ?><br>Todo M&eacute;xico necesita de t&iacute;</p>
-                                </div><!-- .entry-content -->
-
-                                <footer class="entry-footer d-flex flex-wrap align-items-center mt-5">
-                                    <a href="http://www.paypal.me/barcewin" target="_blank" class="btn gradient-bg mr-2">DONA AQU&Iacute;</a>
-                                    <a href="#voluntariado" class="btn orange-border">Conoce m&aacute;s</a>
-                                </footer><!-- .entry-footer -->
-                            </div><!-- .col -->
-                        </div><!-- .row -->
-                    </div><!-- .container -->
-                </div><!-- .hero-content-overlay -->
-            </div><!-- .hero-content-wrap -->
-            
-            
-            
-        </div><!-- .swiper-wrapper -->
-
-        <div class="pagination-wrap position-absolute w-100">
-            <div class="container">
-                <div class="swiper-pagination"></div>
-            </div><!-- .container -->
-        </div><!-- .pagination-wrap -->
-    
-
-<!-- Swiper JS -->
-  <script src="js\swiper.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-   var mySwiper = new Swiper('.swiper-container', {
-  autoplay: {
-    delay: 5000,
-  },
-});
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  </script>
-        
-        
-        
-        <!-- Add Arrows -->
-        <div class="swiper-button-next flex justify-content-center align-items-center">
-            <span><svg viewbox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg></span>
-        </div>
-
-        <div class="swiper-button-prev flex justify-content-center align-items-center">
-            <span><svg viewbox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"></path></svg></span>
-        </div>
-        
-       
-        
-        
-    </div><!-- .hero-slider -->
-    
-    
-    
-    <div class="home-page-limestone">
-        <div class="container">
-            <div class="row align-items-end">
-                <div class="coL-12 col-lg-6">
-                    <div class="section-heading">
-                        <h2 class="entry-title"><?php echo $sitename; ?> te invita a conocer y participar en nuestra labor humanitaria.</h2>
-
-                        <p class="mt-5">Todas tus aportaciones se traducen en vidas salvadas y asistencia humanitaria. Como nosotros, tú puedes ayudar cuando más se necesita.<br>*.- Datos a nivel nacional, consulta más <a href="images\LOGROS 2018.pdf" target="_blank"><font color="red">Aqu&iacute;.</font></a></p>
-                    </div><!-- .section-heading -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-lg-6">
-                    <div class="milestones d-flex flex-wrap justify-content-between">
-                        <div class="col-12 col-sm-4 mt-5 mt-lg-0">
-                            <div class="counter-box">
-                                <div class="d-flex justify-content-center align-items-center">
- <img src="images\dove.png" alt="">                               </div>
-
-                                <div class="d-flex justify-content-center align-items-baseline">
-                                    <div class="start-counter" data-to="5748983" data-speed="2000"></div>
-                                </div>
-
-                                <h3 class="entry-title">SERVICIOS M&Eacute;DICOS GRATUITOS*</h3><!-- entry-title -->
-                            </div><!-- counter-box -->
-                        </div><!-- .col -->
-
-                        <div class="col-12 col-sm-4 mt-5 mt-lg-0">
-                            <div class="counter-box">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    
-                                   
-                                    <img src="images\donation.png" alt="">   
-                                </div>
-
-                                <div class="d-flex justify-content-center align-items-baseline">
-                                    <div class="start-counter" data-to="1395414" data-speed="2000"></div>
-                                </div>
-
-                                <h3 class="entry-title">SERVICIOS DE BRIGADA*</h3><!-- entry-title -->
-                            </div><!-- counter-box -->
-                        </div><!-- .col -->
-
-                        <div class="col-12 col-sm-4 mt-5 mt-lg-0">
-                            <div class="counter-box">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    
-                                                        <img src="images\teamwork.png" alt="">
-
-                                </div>
-
-                                <div class="d-flex justify-content-center align-items-baseline">
-                                    <div class="start-counter" data-to="46323" data-speed="2000"></div> 
-                                </div>
-
-                                <h3 class="entry-title">VOLUNTARIOS ACTIVOS*</h3><!-- entry-title -->
-                            </div><!-- counter-box -->
-                        </div><!-- .col -->
-                    </div><!-- .milestones -->
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .our-causes counter -->
-
-
-  
-
-    <div class="home-page-welcome">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 order-2 order-lg-1">
-                    <div class="welcome-content">
-                        <header class="entry-header">
-                            <h2 class="entry-title">Bienvenido a <?php echo $sitename; ?></h2>
-                        </header><!-- .entry-header -->
-
-                        <div class="entry-content2 mt-5">
-                            
-                            
-                            <p>
-                                Todos los días la <?php echo $sitename; ?> es protagonista de una historia en la que la vida triunfa.    <br>
-
-Somos parte de un gran movimiento humanitario global, cuyo corazón y motor es la pasión por servir a los demás.    <br>
-
-La historia de la Cruz Roja está hecha de muchas historias de personas que, en las situaciones más extremas y dolorosas, salvan vidas - y con ello - nos recuerdan que lo mejor del ser humano brilla aún en los tiempos más obscuros.
-                                
-                                    <br>
-                                La <?php echo $sitename; ?> existe porque todos podemos ser héroes. Tú puedes serlo al donar y apoyar esta gran causa humanitaria. 
-                                <br>
-                                Lo somos al apoyar a los Voluntarios en situaciones de desastres naturales, lo somos cuando no miramos a otro lado frente a la tragedia y llamamos a la Cruz Roja.
-<br>
-Aquí encontrarás muchas maneras de sumarte a la gran causa humanitaria de la <?php echo $sitename; ?>.
-<br>
-
-Puedes comenzar ahora mismo donando y haciendo de esa donación una buena costumbre y promoviendo en tus redes sociales más donaciones. ¡Es muy fácil!
-<br>
-
-Puedes convertir la responsabilidad social de tu empresa en impacto humanitario apoyando a la Cruz Roja.
-<br>
-
-Y puedes ser el héroe que alguien necesita, uniéndote como Voluntario, formándote como paramédico. ¡Únete! Las personas como tú salvan al mundo, una vida a la vez.
-                   <br>             Bienvenido a la gran causa humanitaria de la <?php echo $sitename; ?>, gracias por compartir nuestra pasión por servir.
-
-
-
-
-</p>
-                        </div><!-- .entry-content -->
-
-                        <div class="entry-footer mt-5">
-                              <a href="acerca.html" class="btn orange-border"><font color="white">Conoce M&aacute;s</font>
-
- </a>
-                        </div><!-- .entry-footer -->
-                    </div><!-- .welcome-content -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-lg-6 mt-4 order-1 order-lg-2">
-                    <img src="images\principios.png" alt="Bienvenido">
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div>
-    
-    <!-- .home-page-icon-boxes -->
-      <div class="home-page-icon-boxes">
-        <div class="container">
-                        <div class="col-12 col-lg-6 order-2 order-lg-1">
-                    <div class="welcome-content">
-                      
-                        <header class="entry-header">
-                            <h2 class="entry-title">M&aacute;s formas de ayudar</h2>
-                            
-                        </header><!-- .entry-header -->
-
-                   
-                    </div><!-- .welcome-content -->
-                </div><!-- .col -->
-            <div class="row">
-                
-                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
-                    <div class="icon-box active">
-                        <figure class="d-flex justify-content-center">
+            <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Información de la Brigada</h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead class="table-primary">
+                    <tr>
+                      <th>Encargado de la Brigada</th>
+                      <th>Telefono</th>
+                      <th>Hospital</th>
+                      <th>Numero de cedula</th>
+                    </tr>
+                  </thead>
+                  <tbody>
                     
-                              <img src="images\charity-gray.png" alt="">
-                            <img src="images\charity-white.png" alt="">
-                        </figure>
+                   
+                    <tr>
+                      <td>Natzieli</td>
+                      <td>33122371271</td>
+                      <td>Hospital Civil</td>
+                      <td>213989344</td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+      </div>
+      <!-- End of Main Content -->
 
-                        <header class="entry-header">
-                            <h3 class="entry-title"> <a href="donaciones.html"><font color="black">DONACIONES</font>
-</a></h3>
-                        </header>
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Paris Flores Belmares 2019 - Banco de sangre. Leones Unidos por la Salud - ALPHA TEAM</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
 
-                        <div class="entry-content">
-                            <p>Desde insumos hasta recursos financieros, t&uacute; puedes aportar para salvar una vida. Conoce cómo aqu&iacute;. </p>
-                        </div>
-                    </div>
-                </div>
+    </div>
+    <!-- End of Content Wrapper -->
 
-                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
-                    <div class="icon-box">
-                        <figure class="d-flex justify-content-center">
-                            
-                            <img src="images\hands-gray.png" alt="">
-                            <img src="images\hands-white.png" alt="">
-                        </figure>
+  </div>
+  <!-- End of Page Wrapper -->
 
-                        <header class="entry-header">
-                            <h3 class="entry-title"> <a href="voluntariado.html"><font color="black">VOLUNTARIOS</font>
-</a></h3>
-                        </header>
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
 
-                        <div class="entry-content">
-                            <p>Participa activamente como parte de la comunidad <?php echo $sitename; ?>. Te estamos esperando. </p>
-                        </div>
-                    </div>
-                </div>
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
-                    <div class="icon-box">
-                        <figure class="d-flex justify-content-center">
-                           <img src="images\donation-gray.png" alt="">
-                            <img src="images\donation-white.png" alt="">
-                        </figure>
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-                        <header class="entry-header">
-                            <h3 class="entry-title"> <a href="escuelas.html"><font color="black">ESCUELAS Y CURSOS</font>
-</a></h3>
-                        </header>
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-                        <div class="entry-content">
-                            <p>Como enfermera, param&eacute;dico o con un curso de primeros auxilios, t&uacute; puedes hacer una diferencia. </p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .home-page-icon-boxes -->
-
-   
-    <footer class="site-footer">
-        <div class="footer-widgets">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="foot-about">
-                            <!--<h2><a class="foot-logo" href="inicio.html"><img src="images\logo.png" alt=""></a></h2>-->
-                            
-                            <p><?php echo $sitename; ?> &copy; 2019<br>Todos los derechos reservados</p>
-
-                            <ul class="d-flex flex-wrap align-items-center">
-                               
-                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                               <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
-                               
-                            </ul>
-                        </div><!-- .foot-about -->
-                    </div><!-- .col -->
-
-                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-                        <h2>Enlaces rapidos</h2>
-
-                        <ul>
-                            <li><a href="#" target="_blank">Privacidad</a></li>
-                            
-                            <li><a href="#" target="_blank">Donaciones</a></li>
-                            <li><a href="#" target="_blank">Nuestras causas</a></li>
-                            <li><a href="#" target="_blank">Contacto</a></li><li><a href="tienda.html" target="_blank">Tienda</a></li>
-                           
-                        </ul>
-                    </div><!-- .col -->
-
-                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-                        <div class="foot-latest-news">
-                            <h2>Noticias</h2>
-
-                          <ul>
-                                <li>
-                                    <h3><a href="noticias.html"><?php echo $sitename; ?> firma convenio con el Centro Nacional de Trasplantes para el traslado de órganos en ambulancias</a></h3>
-                                    <div class="posted-date">Septiembre 23, 2019</div>
-                                </li>
-
-                                 <li>
-                                    <h3><a href="noticias.html">Capacita <?php echo $sitename; ?> en Primeros Auxilios a más de 25 mil personas en 20 estados del país</a></h3>
-                                    <div class="posted-date">Septiembre 21, 2019</div>
-                                </li>
-
-                                <li>
-                                    <h3><a href="noticias.html"><?php echo $sitename; ?> recibe el Premio Nacional de Protección Civil 2019</a></h3>
-                                    <div class="posted-date">Septiembre 19, 2019</div>
-                                </li>
-                            </ul>
-                        </div><!-- .foot-latest-news -->
-                    </div><!-- .col -->
-
-                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-                        <div class="foot-contact">
-                            <h2>Contacto</h2>
-
-                            <ul>
-                                <li><i class="fa fa-phone"></i><span>+ (52) 1 33******
-</span></li>
-                                <li><i class="fa fa-envelope"></i><span>leonesporlasangre@udg.mx</span></li>
-                                <li><i class="fa fa-map-marker"></i><span>CUCEI, Guadalajara, Jalisco</span></li>
-                            </ul>
-                        </div><!-- .foot-contact -->
-
-                        
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .footer-widgets -->
-
-       
-    </footer><!-- .site-footer -->
-
-    <script type='text/javascript' src='<?php echo $siteurl; ?>/js/jquery.js'></script>
-    <script type='text/javascript' src='<?php echo $siteurl; ?>/js/jquery.collapsible.min.js'></script>
-    <script type='text/javascript' src='<?php echo $siteurl; ?>/js/swiper.min.js'></script>
-    <script type='text/javascript' src='<?php echo $siteurl; ?>/js/jquery.countdown.min.js'></script>
-    <script type='text/javascript' src='<?php echo $siteurl; ?>/js/circle-progress.min.js'></script>
-    <script type='text/javascript' src='<?php echo $siteurl; ?>/js/jquery.countTo.min.js'></script>
-    <script type='text/javascript' src='<?php echo $siteurl; ?>/js/jquery.barfiller.js'></script>
-    <script type='text/javascript' src='<?php echo $siteurl; ?>/js/custom.js'></script>
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
 
 </body>
+
 </html>
